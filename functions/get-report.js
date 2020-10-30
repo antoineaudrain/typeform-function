@@ -4,7 +4,7 @@ export const handler = async (event, context) => {
     console.log(payload)
     return {
       statusCode: 200,
-      body: JSON.stringify(payload),
+      body: `Get-Report: ${JSON.stringify(payload)}`,
     };
   }
   return {
