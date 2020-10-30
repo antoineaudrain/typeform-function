@@ -1,9 +1,12 @@
 exports.handler = async (event) => {
-  // let { name, gender, smell } = JSON.parse(event.body).payload.data;
-  console.log(JSON.parse(event.body))
-
+  if (Object.entries(event.body).length !== 0) {
+    const payload = JSON.parse(event.body)
+    return {
+      statusCode: 200,
+      body: JSON.stringify(payload),
+    };
+  }
   return {
-    statusCode: 200,
-    body: `wewe`,
+    statusCode: 500,
   };
 };
