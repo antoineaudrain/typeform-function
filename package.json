@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "functions": "./bin/copy-functions.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/antoineaudrain/typeform-function.git"
@@ -17,7 +14,7 @@
     "url": "https://github.com/antoineaudrain/typeform-function/issues"
   },
   "homepage": "https://github.com/antoineaudrain/typeform-function#readme",
-  "dependencies": {
+  "devDependencies": {
     "netlify-lambda": "^2.0.1"
   }
 }
