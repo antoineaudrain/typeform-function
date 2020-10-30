@@ -1,4 +1,4 @@
-exports.handler = async (event) => {
+export const handler = async (event, context) => {
   if (Object.entries(event.body).length !== 0) {
     const payload = JSON.parse(event.body)
     return {
@@ -9,4 +9,4 @@ exports.handler = async (event) => {
   return {
     statusCode: 500,
   };
-};
+}
